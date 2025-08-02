@@ -1,6 +1,7 @@
 # California Housing Linear Regression MLOps Pipeline
 
-This repository presents a professional MLOps pipeline for Linear Regression using the California Housing dataset from `scikit-learn`. The solution encompasses model training, evaluation, quantization, containerization with Docker, and CI/CD automation via GitHub Actions.
+We present a professional MLOps pipeline for Linear Regression, built around the scikit-learn California Housing dataset. This solution integrates model training, evaluation, quantization, Docker containerization, and automated CI/CD via GitHub Actions.
+
 
 
 ## Project Structure
@@ -42,13 +43,12 @@ project-root/
 - joblib
 - pytest
 
-## Quick Start
 
-### Installation
+## Installation
 
 bash
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone https://github.com/Abhinav-Kumar-Ranjan/abhinav_ranjan_g24ai1006_mlops-major-assignment.git
+cd abhinav_ranjan_g24ai1006_mlops-major-assignment
 python -m venv venv
 # On Windows:
 venv\Scripts\activate
@@ -57,7 +57,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 
-### Model Training
+## Model Training
 
 bash
 python src/train.py
@@ -69,7 +69,7 @@ python src/train.py
 
 
 
-### Model Quantization
+## Model Quantization
 
 bash
 python src/quantize.py
@@ -81,7 +81,7 @@ python src/quantize.py
 - Performs inference with de-quantized weights
 
 
-### Running Tests
+## Running Tests
 
 bash
 pytest tests/ -v
@@ -94,9 +94,9 @@ docker build -t mlops-pipeline
 docker run mlops-pipeline
 
 
-### DockerHub Image
+## DockerHub Image
 
-Pull the latest image from [DockerHub](https://https://hub.docker.com/repository/docker/abhinavkumarranjan/mlops-pipeline/tags):
+Pull the latest image from [DockerHub](https://hub.docker.com/repository/docker/abhinavkumarranjan/mlops-pipeline/tags):
 
 bash
 docker pull abhinavkumarranjan/mlops-pipeline
@@ -150,3 +150,4 @@ Unit tests cover:
 - Training process
 - R² score threshold validation
 - Parameter extraction and
+
